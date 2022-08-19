@@ -56,7 +56,7 @@ function CreatePost() {
         dispatch(addPost(res.data));
         setImageToPost(null);
       })
-      .catch((error) => console.lof(error));
+      .catch((error) => console.log(error));
   };
 
   return (
