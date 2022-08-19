@@ -1,11 +1,12 @@
-import { signIn, useSession } from "next-auth/react";
-import React from "react";
+import { signIn, signOut, useSession } from "next-auth/react";
+import React, { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
 import { CgOptions } from "react-icons/cg";
 
 function Header() {
   const { data: session } = useSession();
+  const [dropdown, setDropdown] = useState(false);
   return (
     <div className="px-5 lg:px-20 xl:px-64 sticky top-0 z-50 h-20 bg-neutral-900 flex space-x-3 justify-center items-center">
       <BsFacebook className="h-8 w-8 text-cyan-400 mr-5" />
@@ -26,7 +27,10 @@ function Header() {
               src="https://avatars.githubusercontent.com/u/72876374?v=4"
             ></img>
           </div>
-          <button className="hover:bg-neutral-800 p-2 rounded-lg active:bg-neutral-700">
+          <button
+            onClick={() => setDropdown(!dropdown)}
+            className="hover:bg-neutral-800 p-2 rounded-lg active:bg-neutral-700"
+          >
             <CgOptions className="h-6 w-6" />
           </button>
         </>
@@ -39,6 +43,14 @@ function Header() {
             Login
           </button>
         </>
+      )}
+      {dropdown && (
+        <div
+          onClick={signOut}
+          className="p-3 rounded-xl bg-sky-700 absolute top-24 right-3"
+        >
+          <button>Sign Out</button>
+        </div>
       )}
     </div>
   );
