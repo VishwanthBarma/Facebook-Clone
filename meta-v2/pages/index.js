@@ -6,12 +6,12 @@ import SideBar from "../components/SideBar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Meta-v2-clone</title>
       </Head>
       <Header />
-      <div className="flex">
+      <div className="flex lg:px-20 xl:px-64">
         <SideBar />
         <Feed />
       </div>

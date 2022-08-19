@@ -15,3 +15,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.my-h {
+    height: calc(100vh - 100px);
+}

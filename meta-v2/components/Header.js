@@ -5,7 +5,7 @@ import { CgOptions } from "react-icons/cg";
 
 function Header() {
   return (
-    <div className="px-5 lg:px-20 xl:px-64 py-3 sticky top-0 z-50 h-20 bg-neutral-900 flex space-x-3 justify-center items-center">
+    <div className="px-5 lg:px-20 xl:px-64 sticky top-0 z-50 h-20 bg-neutral-900 flex space-x-3 justify-center items-center">
       <BsFacebook className="h-8 w-8 text-cyan-400 mr-5" />
       <div className="flex items-center relative flex-1">
         <BiSearchAlt className="h-5 w-5 absolute left-3 text-slate-400" />
