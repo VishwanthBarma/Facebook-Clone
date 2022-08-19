@@ -20,7 +20,7 @@ function Post() {
       <div className="h-46 w-full mb-5">
         <img
           className="object-cover h-46 w-full"
-          src="https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000"
+          src=" https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg"
         ></img>
       </div>
       <div className="flex items-center justify-around mb-5">
